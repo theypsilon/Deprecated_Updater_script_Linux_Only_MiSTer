@@ -220,7 +220,7 @@ TO_BE_DELETED_EXTENSION="to_be_deleted"
 #========= CODE STARTS HERE =========
 
 UPDATER_VERSION="4.0.17"
-echo "MiSTer Updater version ${UPDATER_VERSION}"
+echo "MiSTer Linux Updater version ${UPDATER_VERSION}"
 echo ""
 
 ORIGINAL_SCRIPT_PATH="$0"
