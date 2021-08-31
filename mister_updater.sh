@@ -461,7 +461,7 @@ then
 	REPOSITORIES_NEGATIVE_FILTER_REGEX="([\/_-]$( echo "$REPOSITORIES_NEGATIVE_FILTER" | sed 's/[ 	]\{1,\}/)|([\/_-]/g' ))"
 fi
 CORE_CATEGORIES_LAST_SUCCESSFUL_RUN_FILTER=""
-LAST_SUCCESSFUL_RUN_PATH="${WORK_PATH}/$(basename ${ORIGINAL_SCRIPT_PATH%.*}.last_successful_run)"
+LAST_SUCCESSFUL_RUN_PATH="${WORK_PATH}/$(basename ${ORIGINAL_SCRIPT_PATH%.*}_linux.last_successful_run)"
 if [ -f ${LAST_SUCCESSFUL_RUN_PATH} ]
 then
 	LAST_SUCCESSFUL_RUN_DATETIME_UTC=$(cat "${LAST_SUCCESSFUL_RUN_PATH}" | sed '1q;d')
@@ -1183,7 +1183,7 @@ then
 fi
 
 EXIT_CODE=0
-LOG_PATH="${WORK_PATH}/$(basename ${ORIGINAL_SCRIPT_PATH%.*}.log)"
+LOG_PATH="${WORK_PATH}/$(basename ${ORIGINAL_SCRIPT_PATH%.*}_linux.log)"
 echo "MiSTer Updater version ${UPDATER_VERSION}" > "${LOG_PATH}"
 echo "started at ${UPDATE_START_DATETIME_LOCAL}" >> "${LOG_PATH}"
 echo "" >> "${LOG_PATH}"
