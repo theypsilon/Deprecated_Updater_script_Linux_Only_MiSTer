@@ -19,6 +19,7 @@
 # https://github.com/MiSTer-devel/Updater_script_MiSTer
 
 
+# Version 4.0.18 - 2021-10-29 - Fix parsing of Arcade wiki page.
 # Version 4.0.17 - 2021-08-30 - Support for the new 7z Linux update archive format (thanks to MiSTer Addons for the help with testing).
 # Version 4.0.16 - 2021-08-10 - Fixes Intellivision game folder creation (thanks to theypsilon).
 # Version 4.0.15 - 2021-06-14 - Handle HTML codes for square brackets and ampersand
